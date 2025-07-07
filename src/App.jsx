@@ -9,7 +9,7 @@ import SalesChart from "./components/StatCards";
 import Cases from "./components/Cases";
 import TaskPage from "./pages/TaskPage";
 import PrivateRoute from "./auth/PrivateRoute";
-import Homepage from "./pages/Homepage";
+import Homepage from "../pages/Homepage";
 import MyActivities from "./components/MyActivities";
 
 const App = () => {
