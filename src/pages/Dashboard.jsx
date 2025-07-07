@@ -6,7 +6,7 @@ import CalendarCard from "../components/CalendarCard";
 import VideoPreview from "../components/VideoPreview";
 import MyActivities from "../components/MyActivities";
 import Topbar from "../components/Topbar";
-import "./dashboard.css";
+import "./Dashboard.css";
 
 const Dashboard = () => {
   return (
