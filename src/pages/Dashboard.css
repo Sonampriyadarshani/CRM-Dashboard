@@ -1,0 +1,114 @@
+/* dashboard.css */
+
+body {
+  background-color: #f7f9fc;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Override Bootstrap card look */
+.card-custom {
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Metric Card Styling */
+.metric-card {
+  padding: 1rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+}
+
+.metric-card p {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.metric-card h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.metric-card small {
+  color: #adb5bd;
+}
+
+/* Section Headers */
+.section-title {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+/* Badge colors */
+.badge-pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badge-resolved {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.badge-high {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-low {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+/* Activity Item */
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Video Card */
+.video-preview {
+  margin-top: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+.card-custom {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-custom h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.video-preview video {
+  width: 100%;
+  border-radius: 10px;
+}

@@ -1,25 +1,31 @@
+import React, { useState } from "react";
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
+
 const CalendarCard = () => {
+  const [date, setDate] = useState(new Date());
+
   return (
-    <div className="card mb-0">
-      <div className="card-body pb-2">
-        <h5 className="card-title mb-2">January 2023</h5>
-        <table className="table table-bordered text-center m-0">
-          <thead>
-            <tr className="table-light">
-              <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td></td><td>1</td><td>2</td><td>3</td><td>4</td><td className="bg-primary text-white">5</td><td>6</td>
-            </tr>
-            <tr>
-              <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <div className="card shadow-sm p-2" style={{ fontSize: "0.8rem" }}>
+      <h6 className="text-center">Calendar</h6>
+      <Calendar
+        onChange={setDate}
+        value={date}
+        className="w-100"
+        tileClassName={({ date: d }) => {
+          if (
+            date.getFullYear() === d.getFullYear() &&
+            date.getMonth() === d.getMonth() &&
+            date.getDate() === d.getDate()
+          ) {
+            return "bg-primary text-white rounded text-center p-1";
+          }
+          return "text-center rounded p-1";
+        }}
+      />
+      <p className="mt-2 text-muted text-center">{date.toDateString()}</p>
     </div>
   );
 };
+
 export default CalendarCard;

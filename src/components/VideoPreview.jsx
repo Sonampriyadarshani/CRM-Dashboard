@@ -1,22 +1,20 @@
-const VideoPreview = () => {
+import React from "react";
+
+const VideoOverview = () => {
   return (
-    <div className="card">
-      <div className="card-body p-2">
-        <h6 className="card-title mb-2">CRM Dashboard Demo</h6>
-        <a
-          href="https://www.youtube.com/watch?v=WvbxI35hcYA"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://img.youtube.com/vi/WvbxI35hcYA/hqdefault.jpg"
-            alt="CRM Dashboard Demo"
-            className="w-full h-48 object-cover rounded"
-          />
-        </a>
+    <div className="card shadow-sm mb-3">
+      <div className="card-body">
+        <h6 className="card-title">CRM Video Overview</h6>
+        <div className="ratio ratio-16x9">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="CRM Overview"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
     </div>
   );
 };
 
-export default VideoPreview;
+export default VideoOverview;
